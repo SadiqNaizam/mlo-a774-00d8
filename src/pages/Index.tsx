@@ -1,14 +1,24 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from 'react';
+import PlaceholderCard from '../components/Card/PlaceholderCard';
 
-const Index = () => {
+/**
+ * The main page of the application, responsible for displaying the target component.
+ * It provides a simple layout to center and showcase the PlaceholderCard.
+ */
+const IndexPage: React.FC = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <main className="flex min-h-screen w-full flex-col items-center justify-center bg-background p-4 md:p-8">
+      <div className="w-full max-w-md">
+        <h1 className="mb-4 text-center text-xl font-semibold text-foreground">
+          Minimal UI Component
+        </h1>
+        <p className="mb-8 text-center text-sm text-muted-foreground">
+          Basic structure for a card component with text layout and placeholder elements.
+        </p>
+        <PlaceholderCard />
       </div>
-    </div>
+    </main>
   );
 };
 
-export default Index;
+export default IndexPage;
